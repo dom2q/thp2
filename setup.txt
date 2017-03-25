@@ -1,4 +1,4 @@
-The Hacker Playbook 2
+﻿The Hacker Playbook 2
 http://www.amazon.com/dp/1512214566/
 
 Since this book is based off of the Kali Linux platform, you can download the Kali Linux distro from: http://www.kali.org/downloads/. I highly recommend you download the VMware image (https://www.offensive-security.com/kali-linux-vmware-arm-image-download/) and download Virtual Player/VirtualBox. Remember that it will be a gz-compressed and tar archived file, so make sure to extract them first and load the vmx file.
@@ -15,9 +15,10 @@ Once Your Kali VM is Up and Running
 	○	service postgresql start
 ●	Make postgresql database start on boot
 	○	update-rc.d postgresql enable
-●	Start and stop the Metasploit service (this will setup the database.yml file for you)
-	○	service metasploit start
-	○	service metasploit stop
+●	Initialize database and check database status
+	○	msfdb init
+	○	msfconsole
+	○	dbstatus
 ●	Install gedit
 	○	apt-get install gedit
 ●	Change the hostname - Many network admins look for systems named Kali in logs like DHCP. It is best to follow the naming standard used by the company you are testing
