@@ -18,7 +18,7 @@ Once Your Kali VM is Up and Running
 ●	Initialize database and check database status
 	○	msfdb init
 	○	msfconsole
-	○	dbstatus
+	○	db_status
 ●	Install gedit
 	○	apt-get install gedit
 ●	Change the hostname - Many network admins look for systems named Kali in logs like DHCP. It is best to follow the naming standard used by the company you are testing
