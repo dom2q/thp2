@@ -39,13 +39,16 @@ The Backdoor Factory:
 ●	git clone https://github.com/secretsquirrel/the-backdoor-factory /opt/the-backdoor-factory
 ●	cd the-backdoor-factory
 ●	./install.sh
+●	./update.sh
+●	./backdoor.py
+(Steps verified and installed successfully)
 
 HTTPScreenShot
 ●	HTTPScreenshot is a tool for grabbing screenshots and HTML of large numbers of websites.
 ●	pip install selenium
 ●	git clone https://github.com/breenmachine/httpscreenshot.git /opt/httpscreenshot
 ●	cd /opt/httpscreenshot
-●	chmod +x install-dependencies.sh && ./install-dependencies.sh
+●	./install-dependencies.sh
 ●	HTTPScreenShot only works if you are running on a 64-bit Kali by default. If you are running 32-bit PAE, install i686 phatomjs as follows:
 	○	wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-i686.tar.bz2
 	○	bzip2 -d phantomjs-1.9.8-linux-i686.tar.bz2
@@ -54,6 +57,7 @@ HTTPScreenShot
 
 SMBExec
 ●	A rapid psexec style attack with samba tools.
+●	git clone https://github.com/libyal/libesedb.git /opt/libesedb
 ●	git clone https://github.com/pentestgeek/smbexec.git /opt/smbexec
 ●	cd /opt/smbexec && ./install.sh
 ●	Select 1 - Debian/Ubuntu and derivatives
@@ -61,6 +65,8 @@ SMBExec
 ●	./install.sh
 ●	Select 4 to compile smbexec binaries
 ●	After compilation, select 5 to exit
+(Steps verified and installed successfully)
+
 Masscan
 ●	This is the fastest Internet port scanner. It can scan the entire Internet in under six minutes.
 ●	apt-get install git gcc make libpcap-dev
@@ -68,6 +74,8 @@ Masscan
 ●	cd /opt/masscan
 ●	make
 ●	make install
+●	masscan
+(Steps verified and installed successfully)
 
 Gitrob
 ●	Reconnaissance tool for GitHub organizations
@@ -84,6 +92,8 @@ Gitrob
 CMSmap
 ●	CMSmap is a python open source CMS (Content Management System) scanner that automates the process of detecting security flaws
 ●	git clone https://github.com/Dionach/CMSmap /opt/CMSmap
+●	./cmsmap.py
+(Steps verified and installed successfully)
 
 WPScan
 ●	WordPress vulnerability scanner and brute-force tool
@@ -101,6 +111,8 @@ Printer Exploits
 SQLMap
 ●	SQL Injection tool
 ●	git clone https://github.com/sqlmapproject/sqlmap /opt/sqlmap
+●	cd /opt/sqlmap && ./sqlmap.py -h
+(Steps verified and installed successfully)
 
 Recon-ng
 ●	A full-featured web reconnaissance framework written in Python
